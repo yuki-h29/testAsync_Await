@@ -7,6 +7,8 @@
 
 import Foundation
 
-class ViewControllerModelProtocol {
+protocol ViewControllerModelProtocol {
     
+    var delegate: ViewControllerProtocol? { get set }
+    func fetchData() async -> Bool
 }

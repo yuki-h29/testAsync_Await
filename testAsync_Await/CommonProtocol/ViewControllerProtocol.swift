@@ -7,6 +7,7 @@
 
 import Foundation
 
-class ViewControllerProtocol {
+protocol ViewControllerProtocol: AnyObject {
     
+    func updateView(data: Person)
 }
